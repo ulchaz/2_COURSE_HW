@@ -4,3 +4,6 @@ let  user = {
     isAdmin: false
 };
 console.log(user)
+
+user.sityOfResidense = 'Москва';
+console.log(user);
