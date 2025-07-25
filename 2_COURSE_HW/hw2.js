@@ -13,3 +13,6 @@ console.log(user);
 
 delete user.sityOfResidense
 console.log(user);
+
+let info = prompt('Какую информацию хотите узнать о пользователе?')
+alert(user[info])
