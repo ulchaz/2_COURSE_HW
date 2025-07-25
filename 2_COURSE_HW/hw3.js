@@ -1,7 +1,7 @@
-let password = 'password';
-let userPassword = prompt('Введите пароль');
-if (userPassword === password) {
-    alert('Пароль введен верно')
+let d = 3;
+let e = 9;
+if (d > 100 || e > 100) {
+    console.log('Верно');
 } else {
-    alert('Пароль введен неправильно')
+    console.log('Неверно');
 }
