@@ -1,2 +1,3 @@
-let result = 2**5;
-alert(result);
+let a = 9;
+let b = 2;
+alert(a % b);
