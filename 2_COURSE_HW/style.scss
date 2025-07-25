@@ -83,4 +83,44 @@ input, button, textarea, select {
     }
 }
 
+.games_catalog{
+    background: rgb(0, 9, 21);
+    height: 556px;
+    &-box{
+        display: flex;
+        gap: 32px;
+    }
+}
+
+
+
+.game{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 379px;
+    height: 300px;
+    border-radius: 16px;
+
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    &_name{
+        padding-top: 236px;
+        padding-left: 32px;
+    }
+    &_1{
+        background-image: url(img/game1.jpeg); 
+    }
+    &_2{
+            background-image: url(img/game2.jpeg);   
+    }
+    &_3{
+        background-image: url(img/game3.jpeg);
+    }
+}
 @import "style.css"
