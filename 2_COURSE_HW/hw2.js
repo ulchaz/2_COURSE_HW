@@ -1,2 +1,6 @@
-let  age = prompt('Сколько вам лет?')
-alert(age);
+let  user = {
+    name: 'Юлия',
+    age: 21,
+    isAdmin: false
+};
+console.log(user)
