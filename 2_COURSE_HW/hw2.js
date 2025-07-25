@@ -10,3 +10,6 @@ console.log(user);
 
 user.age = 22;
 console.log(user);
+
+delete user.sityOfResidense
+console.log(user);
