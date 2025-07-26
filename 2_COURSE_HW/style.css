@@ -51,7 +51,6 @@ input, button, textarea, select {
   line-height: 78px;
   letter-spacing: 0px;
   text-align: left;
-  width: 750px;
 }
 .top_text-paragraph {
   color: rgb(255, 255, 255);
@@ -61,8 +60,8 @@ input, button, textarea, select {
   line-height: 32px;
   letter-spacing: 0px;
   text-align: left;
-  width: 481px;
   padding-top: 32px;
+  width: 481px;
 }
 .top_text-paragraph_bold {
   font-weight: 700;
@@ -84,11 +83,13 @@ input, button, textarea, select {
 
 .games_catalog {
   background: rgb(0, 9, 21);
-  height: 556px;
+  padding-top: 128px;
 }
 .games_catalog-box {
   display: flex;
   gap: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .game {
@@ -118,4 +119,59 @@ input, button, textarea, select {
 }
 .game_3 {
   background-image: url(img/game3.jpeg);
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top_text {
+    padding-left: 0;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+  .top_text-header {
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    width: 343px;
+  }
+  .top_text-paragraph {
+    font-size: 14px;
+    line-height: 22px;
+    width: 100%;
+    text-align: center;
+  }
+  .games_catalog {
+    height: 1221px;
+  }
+  .games_catalog-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .games_catalog-box {
+    flex-direction: column;
+  }
+  .game {
+    width: 343px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top_text-header {
+    width: 100%;
+  }
+  .games_catalog-box {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    -moz-column-gap: 32px;
+         column-gap: 32px;
+  }
 }/*# sourceMappingURL=style.css.map */

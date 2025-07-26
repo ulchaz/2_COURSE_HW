@@ -1,0 +1,56 @@
+@media(max-width: 767px){
+    .center{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .top{
+        &_text{
+            padding-left: 0;
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+        &_text-header{
+            font-size: 32px;
+            line-height: 39px;
+            text-align: center;
+            width: 343px;
+        }
+        &_text-paragraph{
+            font-size: 14px;
+            line-height: 22px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .games_catalog{
+        height: 1221px;
+            &-box{
+                flex-direction: column;
+                align-items: center;
+            }
+        &-box{
+            flex-direction: column;
+        }
+    }
+    .game{
+        width: 343px;
+    }
+
+}
+@media (min-width:768px) and (max-width: 1200px){
+    .center{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .top_text-header{
+        width: 100%;
+    }
+    .games_catalog-box{
+        display: flex;
+        gap: 32px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        column-gap: 32px;
+    }
+}
