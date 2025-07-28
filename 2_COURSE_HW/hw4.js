@@ -1,5 +1,5 @@
-let i = 0;
-while (i < 2) {
-    console.log('привет');
+let i = 1;
+while (i < 6) {
+    console.log(i);
     i++;
 }
