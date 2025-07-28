@@ -1,12 +1,12 @@
-function minNum(a, b) {
-    if (a < b) {
-        console.log(a)
+function num(a) {
+    if (a % 2 ==0) {
+        console.log('число четное')
     }
     else {
-        console.log(b)
+        console.log('число нечетное')
     }
 }
 
-minNum(2, 3);
-minNum(6, 1);
-minNum(4,4)
+num(2);
+num(1);
+num(3)
