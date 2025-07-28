@@ -1,5 +1,7 @@
 squaring = (a) =>{
-    console.log(a**2);
+    return a**2;
 }
 
-squaring(3)
+let result = squaring(3);
+
+console.log(result)
