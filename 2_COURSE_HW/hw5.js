@@ -1,12 +1,5 @@
-function num(a) {
-    if (a % 2 ==0) {
-        console.log('число четное')
-    }
-    else {
-        console.log('число нечетное')
-    }
+squaring = (a) =>{
+    console.log(a**2);
 }
 
-num(2);
-num(1);
-num(3)
+squaring(3)
