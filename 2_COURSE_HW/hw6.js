@@ -1,11 +1,8 @@
-let array = [9, 8, 7, 6, 5];
-let userNum = prompt('Введите число');
+let string = 'abcdef';
+let array = string.split('');
 
-userNum = Number(userNum);
+array = array.reverse();
+array = array.join('');
 
-if (array.includes(userNum)) {
-    alert('Угадал')
-} else {
-    alert('Не угадал')
-}
+console.log(array);
 
