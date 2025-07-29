@@ -1,5 +1,6 @@
-let array = [1, 1, 1];
+let array = [9, 8, 7, 'a', 6, 5];
 
-array.push(2, 2, 2);
+array = array.sort();
+const result = array.filter(item => item != 'a');
 
-console.log(array);
+console.log(result);
