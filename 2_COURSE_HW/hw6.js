@@ -1,5 +1,12 @@
-let arr = [1, -7, 12, -9, 11];
-let result = arr.filter(num => ( num < 0));
+let arr = [];
 
-console.log(result);
+for (let i = 0; i < 10; i++) {
+    let random = Math.floor(Math.random() * 10);
+    arr.push(random);
+}
+console.log(arr);
+
+let evenNum = arr.filter(num => num % 2 == 0);
+
+console.log(evenNum);
 
