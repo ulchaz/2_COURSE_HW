@@ -1,5 +1,5 @@
-let arr = [1, 3, 5, 7, 9];
-let result = arr.map(num => (num * num));
+let arr = ['Книга', 'Ручка','Карандаш'];
+let result = arr.map(letter => (letter.length));
 
 console.log(result);
 
