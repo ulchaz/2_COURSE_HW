@@ -1,10 +1,14 @@
-let checkNum = (a, b) => {
-    if (isNaN(a) || isNaN(b)) {
-        return 'Одно или оба значения не являются числом'
+let checkNum = () => {
+    let userNum = prompt('Введите число')
+
+    if (isNaN(userNum)) {
+        return 'Переданный параметр не является числом'
     } else {
-        return a * b;
+        let cubedUserNum = userNum * userNum * userNum;
+        return `${userNum} в кубе равняется ${cubedUserNum}`
     }
 }
 
-console.log(checkNum(1, 'd'));
-console.log(checkNum(2, 4))
+let result = checkNum();
+
+console.log(result)
