@@ -1,12 +1,10 @@
-let askAge = () => {
-    let userAge = prompt('Введите ваш возраст');
-    if (userAge > 0 && userAge <= 12) {
-        alert('Привет, друг!')       
-    } else if (userAge >= 13){
-        alert('Добро пожаловать!')
-    } else{
-        alert('Вы ввели неправильное значение')
+let checkNum = (a, b) => {
+    if (isNaN(a) || isNaN(b)) {
+        return 'Одно или оба значения не являются числом'
+    } else {
+        return a * b;
     }
 }
 
-askAge();
+console.log(checkNum(1, 'd'));
+console.log(checkNum(2, 4))
