@@ -1,5 +1,7 @@
-let twoDimensionalArray = [[1, 2, 3], [4, 5, 6]];
-let oneDimensionalArray = [].concat(...twoDimensionalArray);
+let num = [1, 3, 5, 7, 9];
 
-console.log(oneDimensionalArray);
+for (let i = 0; i < num.length - 1; i++){
+    let sum = num[i] + num[i + 1];
+    console.log(sum);   
+}
 
