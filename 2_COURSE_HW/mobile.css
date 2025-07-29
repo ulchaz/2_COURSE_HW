@@ -21,9 +21,6 @@
     width: 100%;
     text-align: center;
   }
-  .games_catalog {
-    height: 1221px;
-  }
   .games_catalog-box {
     flex-direction: column;
     align-items: center;
@@ -33,6 +30,32 @@
   }
   .game {
     width: 343px;
+  }
+  .season_game {
+    height: 653.61px;
+  }
+  .season_game_block {
+    flex-direction: column;
+    gap: 64px;
+  }
+  .season_game-text {
+    width: 343px;
+    align-items: center;
+  }
+  .season_game-text_header {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    align-items: center;
+  }
+  .season_game-text_paragraph {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+  }
+  .season_game-img_mob {
+    width: 344px;
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {

@@ -24,7 +24,6 @@
         }
     }
     .games_catalog{
-        height: 1221px;
             &-box{
                 flex-direction: column;
                 align-items: center;
@@ -35,6 +34,36 @@
     }
     .game{
         width: 343px;
+    }
+
+    .season_game{
+        height: 653.61px;
+        &_block{
+            flex-direction: column;
+            gap: 64px;
+        }
+        &-text{
+            width: 343px;
+            align-items: center;
+            &_header{
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 39px;
+                align-items: center;
+
+            }
+            &_paragraph{
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 22px;
+                text-align: center;
+            }
+        }
+        &-img{
+            &_mob{
+                width: 344px;
+            }
+        }
     }
 
 }
