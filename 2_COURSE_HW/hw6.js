@@ -1,6 +1,11 @@
-let array = [9, 8, 7, 'a', 6, 5];
+let array = [9, 8, 7, 6, 5];
+let userNum = prompt('Введите число');
 
-array = array.sort();
-const result = array.filter(item => item != 'a');
+userNum = Number(userNum);
 
-console.log(result);
+if (array.includes(userNum)) {
+    alert('Угадал')
+} else {
+    alert('Не угадал')
+}
+
