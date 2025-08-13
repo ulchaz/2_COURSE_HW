@@ -11,3 +11,15 @@ let sum = arr.reduce((acc, value) =>
 let result = sum / arr.length;
 console.log(result);
 
+function findWeekdayAndWeekendNextMonth(){
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = now.getMonth() + 1;
+    const firstDayNextMonth = new Date(year, month, 1);
+    const dayInNextMonth = new Date(year, month + 1, 0).getDate();
+
+    let weekday, weekend;
+    let foundWeekday = false;
+    let foundWeekend = false;
+    
+}
