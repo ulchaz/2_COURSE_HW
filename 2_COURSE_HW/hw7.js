@@ -1,5 +1,10 @@
-let str = 'js';
+const products = ['салат оливье', 'салат цезарь', 'паста карбонара', 'салат мимоза', 'сэндвич с ветчиной'];
+const search = 'салат';
 
-str =  str.toUpperCase();
+products.forEach((product) => {
+    if (product.toLowerCase().startsWith(search.toLowerCase())) {
+        console.log(product);
+    }
+});
 
-console.log(str);
+
