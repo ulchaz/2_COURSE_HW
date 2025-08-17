@@ -1,12 +1,9 @@
-function generateRandomArray (n) {
-    const length = Math.floor(n / 2);
-    const randomArray = [];
-    for (let i = 0; i < length; i++) {
-        const randomNumber = Math.floor(Math.random() * n);
-        randomArray.push(randomNumber)
-    }  
-    return randomArray;      
+function generateRandomArray (min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+
+    return Math.floor(Math.random() * (max - min)) + min; 
 }
-const result = generateRandomArray(16);
+const result = generateRandomArray(10, 20);
 console.log(result);
 
