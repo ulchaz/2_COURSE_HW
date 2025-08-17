@@ -1,10 +1,6 @@
-let num = 32.58884;
+const arrNum = [52, 53, 49, 77, 21, 32]
 
-roundUp = Math.floor(num);
-console.log(roundUp);
+let maxNum = Math.max(...arrNum);
+let minNum = Math.min(...arrNum);
 
-roundDown = Math.ceil(num);
-console.log(roundDown);
-
-roundNearest = Math.round(num);
-console.log(roundNearest);
+console.log(maxNum, minNum);
