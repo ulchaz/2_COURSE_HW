@@ -1,10 +1,10 @@
-const products = ['салат оливье', 'салат цезарь', 'паста карбонара', 'салат мимоза', 'сэндвич с ветчиной'];
-const search = 'салат';
+let num = 32.58884;
 
-products.forEach((product) => {
-    if (product.toLowerCase().startsWith(search.toLowerCase())) {
-        console.log(product);
-    }
-});
+roundUp = Math.floor(num);
+console.log(roundUp);
 
+roundDown = Math.ceil(num);
+console.log(roundDown);
 
+roundNearest = Math.round(num);
+console.log(roundNearest);
