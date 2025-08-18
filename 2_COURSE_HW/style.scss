@@ -128,7 +128,7 @@ input, button, textarea, select {
         gap: 135px;
         align-items: center;
         justify-content: center;
-        padding-top: 51px;
+        padding-top: 233px;
     }
     height: 800px;
     background-color: rgb(0, 9, 21);
@@ -159,6 +159,39 @@ input, button, textarea, select {
         font-size: 18px;
         font-weight: 400;
         line-height: 22px;
+    }
+}
+
+.word_game{
+    height: 800px;
+    background-color: rgb(0, 9, 21);
+    &_block{
+        display: flex;
+        gap: 135px;
+        align-items: center;
+        padding-top: 239px;
+    }
+    &-text{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        &_header{
+            color: rgb(255, 255, 255);
+            font-family: Montserrat;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 59px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+        &_paragraph{
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-weight: 200;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
     }
 }
 
