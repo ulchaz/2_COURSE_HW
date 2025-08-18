@@ -41,6 +41,7 @@
         &_block{
             flex-direction: column;
             gap: 64px;
+            padding-top: 51px;
         }
         &-text{
             width: 343px;
@@ -64,6 +65,36 @@
                 width: 344px;
             }
         }
+    }
+
+    .word_game{
+        height: 653.61px;
+        &_block{
+            display: flex;
+            flex-direction: column-reverse;
+            padding-top: 51px;
+        }
+        &-img_mob{
+            width: 344px;
+        }
+        &-text{
+            width: 343px;
+            align-items: center;
+            &_header{
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 39px;
+                align-items: center;
+
+            }
+            &_paragraph{
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 22px;
+                text-align: center;
+            }
+        }
+
     }
 
 }
