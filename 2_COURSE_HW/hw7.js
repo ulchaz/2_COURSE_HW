@@ -1,8 +1,13 @@
-let myDate = new Date();
-myDate = +myDate;
+function formatDateTime(date) {
+    const days = ["воскресенье",  "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
+    const month = ["январь", "февраль", "март", "апрель", "май", "июнь", "июль", "август", "сентябрь", "октябрь", "ноябрь", "декабрь"];
 
-let days73 = 73 * 24 * 60 * 60 * 1000;
-let searchDate = myDate + days73;
-let daysAfter73 = new Date(searchDate);
+    let formattedDate = 'Дата: '+ date.getDate() + ' ' + month[date.getMonth()] + ' ' +  date.getFullYear() + ' — это ' + days[date.getDay()];
+    let formattedTime = 'Время: ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
 
-console.log(daysAfter73);
+    return `${formattedDate}\n${formattedTime}`;
+
+}
+
+const myDate = new Date();
+console.log(formatDateTime(myDate));
