@@ -1,13 +1,17 @@
-function formatDateTime(date) {
-    const days = ["воскресенье",  "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
-    const month = ["январь", "февраль", "март", "апрель", "май", "июнь", "июль", "август", "сентябрь", "октябрь", "ноябрь", "декабрь"];
+function gameWord() {
+    let fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    fruits = fruits.sort(() => Math.random() - 0.5);
+    window.alert(fruits.join(', '));
 
-    let formattedDate = 'Дата: '+ date.getDate() + ' ' + month[date.getMonth()] + ' ' +  date.getFullYear() + ' — это ' + days[date.getDay()];
-    let formattedTime = 'Время: ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
+    let answerFirst = prompt('Введите первый фрукт из списка');
+    let answerLast = prompt('Введите последний фрукт из списка');
 
-    return `${formattedDate}\n${formattedTime}`;
-
+    if (answerFirst.toLowerCase() === fruits[0].toLowerCase() && answerLast.toLowerCase() === fruits[fruits.length - 1].toLowerCase()){
+        alert('Вы победили!');
+    } else if (answerFirst.toLowerCase() != fruits[0].toLowerCase() && answerLast.toLowerCase() != fruits[fruits.length - 1].toLowerCase()) {
+        alert('Вы не угадали. Повторить?');
+    } else {
+        alert('Так близко!')
+    }
 }
 
-const myDate = new Date();
-console.log(formatDateTime(myDate));
