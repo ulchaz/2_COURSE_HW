@@ -1,8 +1,8 @@
-const intervalId = setInterval(() => {
-    console.log(new Date());
-}, 3000);
+function delayForSecond(callback) {
+    // Код писать можно только внутри этой функции
+   setTimeout(callback, 1000)
+}
 
-setTimeout(() => {
-    clearInterval(intervalId);
-    console.log('30 секунд прошло')
-}, 30000)
+delayForSecond(function () {
+   console.log('Привет, Глеб!');
+})
